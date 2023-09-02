@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta property="og:image" content="https://grcodeclub.github.io/file/background/4.png"/>
+        <meta property="og:title" content="Xρονοσφραγίδες">
+        <script src="https://grcodeclub.github.io/javascript/jquery.js"></script>
+        <script src="https://grcodeclub.github.io/system/javascript/menu.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/markdown.css">
+        <script src="https://cdn.jsdelivr.net/npm/markdown-it@12/dist/markdown-it.min.js"></script>
+        <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <title> GrCode Club</title>
+    </head>
+
+
+    <body class="system" style="color: white;">
+
+    <div class="container">
+        <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
+            <div class="Header"> <!--Αρχή Επικεφαλίδας-->
+                <table>
+                    <tr style="border: none;">
+                        <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                        <td><h1 style="border: none;" class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                        <td><a href="#" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
+                    </tr style="border: none;">
+                </table> 
+            </div> <!--Τέλος Επικεφαλίδας-->
+           
+            <div class="Menu"> <!--Αρχή Menu-->
+                <div id="sidebarMenu" style="  overflow: auto;">
+                    <ul class="sidebarMenuInner">
+                    </ul>
+                  </div>
+            </div><!--Τέλος Menu-->
+
+        </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
+
+        <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
+            <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
+                <table>
+                    <tr style="border: none;">
+                        <td style="border: none;"><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                        <td style="border: none;"><h1 style="border: none;" class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                    </tr>
+                </table> 
+            </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
+            <table>  <!--Αρχή Menu σε κινητά-->
+                <tr>
+                    <td>
+                        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                        <label for="openSidebarMenu" class="sidebarIconToggle">
+                          <div class="spinner diagonal part-1"></div>
+                          <div class="spinner horizontal"></div>
+                          <div class="spinner diagonal part-2"></div>
+                        </label>
+                        <div id="sidebarMenu" style="overflow: auto;">
+                          <ul class="sidebarMenuInner">
+                          </ul>
+                        </div>
+                        </td>
+                    </tr>
+            </table> <!--Τέλος Menu σε κινητά-->
+        </section> <!--Τέλος εμφάνιση σε κινητά-->
+
+
+        <div class="Text" > <!--Αρχή Κειμένου-->
+            <a href="../post.html"><img src="https://grcodeclub.github.io/file/logo_and_graphic/back.png" class="logo_back"></a>
+            <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
+                <h1 class="title">Xρονοσφραγίδες</h1>
+                <h3 class="highlight_blue">Διανυσματικές Xρονοσφραγίδες</h3>              
+
+                <p>
+                    <ol>
+                        <li>Πριν από την εκτέλεση ενός συμβάντος η Pi εκτελεί VCi[ i ] ← VCi[ i ] + 1.</li>
+                        <li>Όταν η διεργασία Pi στέλνει ένα μήνυμα m στην Pj, θέτει την διανυσματική χρονοσφραγίδα vt(m) ίση με VCi
+                            (αφού έχει εκτελέσει το προηγούμενο βήμα)</li>
+                        <li>Όταν η διεργασία Pj λάβει το m προσαρμόζει το διάνυσμά
+                            της θέτοντας VCj [k] ← max{VCj[k], vt(m)[k]} για κάθε k.</li>
+                    </ol>
+                </p>
+                <img src="./GrCode/img/1.png"><br><br>
+                <p> Αρχικα τα περνουμε με την σειρα S1,S2,S3,A,B,C,D,E,F και G <br> 
+                Στο p0 είναι  S1,A,F,G <br> Στο p1 είναι S2,B,C <br> Στο p2 είναι S3,D,F</p>
+                <p><u>ΞΕΡΟΥΜΕ</u><br>S1 (1,1,1) <br> S2 (0,2,2) <br> S3 (1,1,3)</p>
+                <p><u>Xρονοσφραγίδα A</u><br>A (2,1,1) ← Αυξάνουμε +1 την τιμή της 1ης θέσης του S1 (<U>1</U>,1,1) (S1[0] | P0)</p>
+                <p><u>Xρονοσφραγίδα B</u><br>B (2,3,2) ← Αυξάνουμε την τιμή της 2ης θέσης +1 (S[1] | P0) και βρίσκουμε το max της 1ης και 3ης θέσης του S2  (<U>0</U>,<u>2</u>,2) και A (<u>2</u>,<u>1</u>,1)</p>
+                <p><u>Xρονοσφραγίδα C</u><br>C (2,4,2) ← Αυξάνουμε την τιμή της 2ης θέσης +1 (B[1] | P1) του B (2,<u>3</u>,2)</p>
+                <p><u>Xρονοσφραγίδα D</u><br>D (2,4,4) ← Αυξάνουμε την τιμή της 3ης θέσης +1 (S3[2] | P) και βρίσκουμε της 1ης και 2ης θέσης το max του S3 (<u>1,1</u>,3) και C (<u>2,4</u>,4) </p>
+                <p><u>Xρονοσφραγίδα E</u><br>E (2,4,5) ← Αυξάνουμε +1 την τιμή της 3ης θέσης (D[2] | P2) του D (2,4,4)</p>
+                <p><u>Xρονοσφραγίδα F</u><br>F (3,4,5) ← Αυξάνουμε την τιμή της 1ης θέσης +1 (A[0] | P0) και βρίσκουμε το max της 2ης και 3ης θέσης του E (2,4,5) και A (2,1,1)</p>
+                <p><u>Xρονοσφραγίδα G</u><br>G (4,4,5) ← Αυξάνουμε +1 την τιμή της 1ης θέσης του F (3,4,5) (F[0] | P0)</p>
+                <h3 class="highlight_blue">Χρονοσφραγίδες Lamport</h3>
+                <p>
+                    <u>O Αλγόριθμος του Lamport</u><br>
+                    Κάθε διεργασία Pi διατηρεί μια τοπική μεταβλητή LTi (Logical Time) η οποία καλείται λογικό ρολόι και αποθηκεύει μη αρνητικούς ακέραιους
+                    και έχει αρχική τιμή 0.
+                <ol>
+                    <li>Πριν από την εκτέλεση ενός γεγονότος η Pi εκτελεί <br> LTi ← Ti + 1</li>
+                    <li>Όταν η διεργασία Pi στέλνει μήνυμα m στην Pj, θέτει την χρονοσφραγίδα ts(m) (timestamp) του m ίση με LTi</li>
+                    <li>Όταν η διεργασία Pj λάβει το m προσαρμόζει το διάνυσμά  της θέτοντας
+                        <br> LTj ← max{LTj , ts(m)}</li>
+                   
+                </ol>
+                </p>
+                <hr><p> 
+                Είναι πιθανό δύο συµβάντα A και D που πραγµατοποιούνται σε
+                δύο διαφορετικές διεργασίες να µην συνδέονται µε την σχέση και
+                να έχουν τις ίδιες χρονοσφραγίδες   
+                </p>
+                <hr> 
+                <img src="./GrCode/img/2.png"><br><br>
+                <p>Για να υπολογίσουμε το L περνούμε την max από το Α και B. Το Α είναι η διεργασία που στέλνει και το Β είναι η προηγουμένη διεργασία  αρά  L = max(A,B)
+                <p>p1=0 p2=0 p3=0</p>
+                <p>A:1 => p1 + 1 <br>
+                   B:2 => max(1,0)+1 <br>
+                   C:3 => B+1 <br>
+                   D:1 => p3 + 1 <br>
+                   E:2 => D + 1 <br>
+                   F:3 => max(2,1) + 1 <br>
+                   E:4 => F + 1 </p>
+
+
+            </div><!-- Τέλος Background Κειμένου-->
+        </div> <!--Τέλος Κειμένου-->
+
+    </div> <!--Τέλος container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/javascript/footer.js"></script>       
+        </footer>
+    </body>
+</html>
