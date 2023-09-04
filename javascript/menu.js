@@ -3,9 +3,9 @@ $(document).ready(function() {
     $('.sidebarMenuInner').append(menuLink);
     menuLink = '<li><a href="https://grcodeclub.github.io">GrCode Club</a></li>';
     $('.sidebarMenuInner').append(menuLink);
-    menuLink = '<li><a href="https://grcodeclub.github.io/system/windows.html">Windows</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/windows">Windows</a></li>';
     $('.sidebarMenuInner').append(menuLink);
-    menuLink = '<li><a href="https://grcodeclub.github.io/system/linux.html">Linux</li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/linux">Linux</li>';
     $('.sidebarMenuInner').append(menuLink);
     menuLink = '<li><a href="https://grcodeclub.github.io/system/post.html">Έγγραφα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
