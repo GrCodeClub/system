@@ -1,1 +1,105 @@
 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta property="og:image" content="https://grcodeclub.github.io/file/background/4.png"/>
+        <meta property="og:title" content="File system">
+        <script src="https://grcodeclub.github.io/js/jquery.js"></script>
+        <script src="https://grcodeclub.github.io/system/post/menu.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <title> GrCode Club</title>
+    </head>
+
+
+    <body class="system">
+
+    <div class="container">
+        <section class="show_desktop"> <!--ΑΡΧΗ show_desktop-->
+            <div class="Header"> <!--ΑΡΧΗ Header show_desktop-->
+                <table>
+                    <tr>
+                        <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                        <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
+                        <td><a href="https://github.com/GrCodeClub/system/edit/main/post/file-system.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
+                    </tr>
+                </table> 
+            </div> <!--ΤΕΛΟΣ Header show_desktop-->
+           
+            <div class="Menu"> <!--ΑΡΧΗ Menu show_desktop-->
+                <div id="sidebarMenu" style="  overflow: auto;">
+                    <ul class="sidebarMenuInner">
+                    </ul>
+                  </div><!--Menu end-->
+            
+            </div><!--ΤΕΛΟΣ Menu show_desktop-->
+        </section> <!--ΤΕΛΟΣ show_desktop-->
+
+        <section class="show_mobile">  <!--ΑΡΧΗ show_mobile-->
+            <div class="Header"> <!--ΑΡΧΗ Header show_mobile-->
+                <table>
+                    <tr>
+                        <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                        <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
+                    </tr>
+                </table> 
+            </div> <!--ΤΕΛΟΣ Header show_mobile-->
+           <div>
+                    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                    <label for="openSidebarMenu" class="sidebarIconToggle">
+                        <div class="spinner diagonal part-1"></div>
+                        <div class="spinner horizontal"></div>
+                        <div class="spinner diagonal part-2"></div>
+                    </label>
+                    <div id="sidebarMenu">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div>
+        </section> <!--ΤΕΛΟΣ show_mobile-->
+
+
+        <div class="Text"> <!--ΑΡΧΗ Text-->
+            <div class="text_bg">
+                <h1 class="title">File system</h1>
+                <p>Το σύστημα αρχείων καθορίζει τον τρόπο με τον οποίο τα αρχεία ονομάζονται, προστατεύονται, αποθηκεύονται στο δίσκο, αναζητούνται και ανακτώνται. Επίσης, μπορεί να παρέχει λειτουργίες όπως συμπίεση αρχείων, κατανομή χώρου στο δίσκο, αντιγραφή και μετακίνηση αρχείων, διαχείριση δικαιωμάτων πρόσβασης και πολλά άλλα.
+
+                </p>
+                <p>Κάθε λειτουργικό σύστημα (όπως τα Windows, το macOS, το Linux κ.λπ.) χρησιμοποιεί το δικό του σύστημα αρχείων για τη διαχείριση των αρχείων και των φακέλων του. Για παράδειγμα, τα Windows χρησιμοποιούν το NTFS (New Technology File System), το macOS χρησιμοποιεί το HFS+ ή το APFS (Apple File System), ενώ το Linux χρησιμοποιεί το ext4, μεταξύ άλλων. Κάθε σύστημα αρχείων έχει τα δικά του χαρακτηριστικά και περιορισμούς.</p>
+                
+                <h3 class="highlight_blue">NTFS  (New Technology File System)</h3>
+                <p>Το σύστημα αρχείων NTFS είναι το προτιμώμενο σύστημα αρχείων για τα λειτουργικά συστήματα Windows της Microsoft.</p>
+                <p>Συμβατότητα: Το NTFS δεν είναι πλήρως συμβατό με άλλα λειτουργικά συστήματα όπως το Linux ή το macOS. Ωστόσο, υπάρχουν εργαλεία και οδηγίες που μπορούν να βοηθήσουν στην ανάγνωση και εγγραφή σε δίσκους NTFS από αυτά τα λειτουργικά συστήματα.</p>
+                <p>Τα πλεονεκτήματα χρήσης του σε σχέση με το FAT και FAT32 προκύπτουν από τις δυνατότητες του και είναι:</p>
+                <ol>
+                    <li>Ασφαλεία: Παρέχει χαρακτηριστικά ασφαλείας και δικαιωμάτων πρόσβασης που μπορούν να ελέγχουν ποιος έχει πρόσβαση σε ποια αρχεία και φάκελους.</li>
+                    <li>Υποστήριξη Μεγάλων Δίσκων: Το NTFS υποστηρίζει μεγάλους δίσκους και αρχεία, πολύ μεγαλύτερους από ό,τι το FAT.</li>
+                    <li>Ανάκτηση Σφαλμάτων: Το NTFS προσφέρει μηχανισμούς για ανίχνευση και ανάκτηση σφαλμάτων του δίσκου.</li>
+                    <li>Καλύτερη Διαχείριση Χώρου: Το NTFS επιτρέπει την αποτελεσματική διαχείριση του διαθέσιμου χώρου στο δίσκο, καθώς και τη συμπίεση αρχείων.</li>
+                </ol>
+                <h3 class="highlight_blue">ext4 (Extended File System 4)</h3>
+                <p><u>Είναι το προεπιλεγμένο σύστημα αρχείων σε πολλές διανομές Linux.</u></p>
+                <p> Το ext4 είναι ένα δημοφιλές σύστημα αρχείων που χρησιμοποιείται κυρίως στο λειτουργικό σύστημα Linux. Είναι η τέταρτη έκδοση του Extended File System (ext), ένα από τα πιο γνωστά και χρησιμοποιούμενα συστήματα αρχείων στον κόσμο Linux.</p>
+                <ol>
+                    <li>Υποστήριξη Μεγάλων Δίσκων: Ένα από τα βασικά χαρακτηριστικά του ext4 είναι η υποστήριξη μεγάλων αποθηκευτικών μέσων και αρχείων. Μπορεί να χειριστεί πολύ μεγάλους δίσκους και αρχεία, κάτι που το έκανε κατάλληλο για εξυπηρέτηση και αποθήκευση δεδομένων.</li>
+                    <li>Συμβατότητα: Το ext4 είναι εξαιρετικά συμβατό με τα προηγούμενα συστήματα αρχείων ext2 και ext3, καθιστώντας εύκολη τη μετάβαση από παλαιότερες δομές αρχείων.</li>
+                    <li>Αναγνώριση Σφαλμάτων: Το ext4 περιλαμβάνει μηχανισμούς ανίχνευσης και ανάκτησης σφαλμάτων, προστατεύοντας τα δεδομένα από απώλεια κατά την περίπτωση σφάλματος του δίσκου.</li>
+                    <li>Υποστήριξη Χαρακτηριστικών: Το ext4 υποστηρίζει πολλές χρήσιμες λειτουργίες όπως τα δικαιώματα πρόσβασης, την συμπίεση, την κρυπτογράφηση, τα σημεία ελέγχου και άλλα.</li>
+                </ol>
+            </div>
+        </div> <!--ΤΕΛΟΣ Text-->
+
+    </div> <!--ΤΕΛΟΣ container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/js/footer.js"></script>       
+        </footer>
+    </body>
+</html>
