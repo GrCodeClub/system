@@ -11,6 +11,8 @@ $(document).ready(function() {
     $('.sidebarMenuInner').append(menuLink);
     menuLink = '<li><a href="https://grcodeclub.github.io/system/post/extensions_files.html">Επεκτάσεις Αρχείων</a></li>';
     $('.sidebarMenuInner').append(menuLink);
+    menuLink = '<li><a href="https://grcodeclub.github.io/system/post/file-system.html.html">Σύστημα αρχείων</a></li>';
+    $('.sidebarMenuInner').append(menuLink);
     menuLink = '<li style="height: 200px;"></li>';
     $('.sidebarMenuInner').append(menuLink);
   });
