@@ -3,6 +3,8 @@ $(document).ready(function() {
     $('.sidebarMenuInner').append(menuLink);
     menuLink = ' <li><a href="https://grcodeclub.github.io/system">Λειτουργικό Σύστημα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
+        menuLink = ' <li><a href="https://grcodeclub.github.io/system/ορολογία.html">Ορολογία</a></li>';
+    $('.sidebarMenuInner').append(menuLink);
     menuLink = '<li><a href="https://grcodeclub.github.io/windows">Microsoft Windows</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     menuLink = '<li><a href="https://grcodeclub.github.io/linux">Linux</li>';
