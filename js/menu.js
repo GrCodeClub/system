@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('.sidebarMenuInner').append(menuLink);
     menuLink = ' <li><a href="https://grcodeclub.github.io/system">Λειτουργικό Σύστημα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
-    menuLink = ' <li><a href="https://grcodeclub.github.io/system/post/ορολογία">Ορολογία</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.github.io/system/ορολογία">Ορολογία</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     menuLink = '<li><a href="https://grcodeclub.github.io/windows">Microsoft Windows</a></li>';
     $('.sidebarMenuInner').append(menuLink);
@@ -11,11 +11,11 @@ $(document).ready(function() {
     $('.sidebarMenuInner').append(menuLink);
     menuLink = '<li><a href="https://grcodeclub.github.io/android">Android</li>';
     $('.sidebarMenuInner').append(menuLink);
-    menuLink = '<li><a href="https://grcodeclub.github.io/system/post/list">Έγγραφα</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/system/post">Έγγραφα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
-    menuLink = '<li><a href="https://grcodeclub.github.io/system/post/extensions_files">Επεκτάσεις Αρχείων</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/system/files/extensions_files">Επεκτάσεις Αρχείων</a></li>';
     $('.sidebarMenuInner').append(menuLink);
-    menuLink = '<li><a href="https://grcodeclub.github.io/system/post/file-system">Σύστημα αρχείων</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/system/files/file-system">Σύστημα αρχείων</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     menuLink = '<li style="height: 200px;"></li>';
     $('.sidebarMenuInner').append(menuLink);
