@@ -4,7 +4,7 @@
         <meta property="og:image" content="https://grcodeclub.github.io/file/background/4.png"/>
         <meta property="og:title" content="List of File Signatures">
         <script src="https://grcodeclub.github.io/js/jquery.js"></script>
-        <script src="https://grcodeclub.github.io/system/post/menu.js"></script>
+        <script src="https://grcodeclub.github.io/system/js/menu.js"></script>
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
@@ -19,39 +19,40 @@
 
 
     <body class="system">
-    <div class="container">
-        <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
-            <div class="Header"> <!--Αρχή Επικεφαλίδας-->
-                <div class="layout">
+        <div class="container">
+            <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας-->
+                    <div class="layout">
                         <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
                         <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
-                </div> 
-            </div> <!--Τέλος Επικεφαλίδας-->  
-            <div class="Menu"> <!--Αρχή Menu-->
+                    </div> 
+                </div> <!--Τέλος Επικεφαλίδας-->       
+                <div class="Menu"> <!--Αρχή Menu-->
+                    <div id="sidebarMenu" style="overflow: auto;">
+                        <ul class="sidebarMenuInner"></ul>
+                      </div>
+                </div><!--Τέλος Menu-->
+            </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
+    
+            <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
+                    <div class="layout">
+                        <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                        <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                    </div> 
+                </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
+                <!--Αρχή Menu σε κινητά-->
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                    <div class="spinner diagonal part-1"></div>
+                    <div class="spinner horizontal"></div>
+                    <div class="spinner diagonal part-2"></div>
+                </label>
                 <div id="sidebarMenu" style="overflow: auto;">
                     <ul class="sidebarMenuInner"></ul>
-                </div>
-            </div><!--Τέλος Menu-->
-        </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
-
-        <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
-            <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
-                <div class="layout">
-                    <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
-                    <div><h1  class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
-                </div> 
-            </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
-             <!--Αρχή Menu σε κινητά-->
-            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-            <label for="openSidebarMenu" class="sidebarIconToggle">
-                <div class="spinner diagonal part-1"></div>
-                <div class="spinner horizontal"></div>
-                <div class="spinner diagonal part-2"></div>
-            </label>
-            <div id="sidebarMenu" style="overflow: auto;">
-                <ul class="sidebarMenuInner"></ul>
-            </div><!--Τέλος Menu σε κινητά-->
-        </section> <!--Τέλος εμφάνιση σε κινητά-->
+                </div> <!--Τέλος Menu σε κινητά-->
+            </section> <!--Τέλος εμφάνιση σε κινητά-->
+    
 
 
         <div class="Text" > <!--Αρχή Κειμένου-->
@@ -74,7 +75,7 @@
               </div>
               <script>
                   const markdownPreview = document.querySelector(".markdown-preview-content");
-                  const markdownURL = "https://grcodeclub.github.io/system-files/List_of_File_Signatures.md"; // Αντικαταστήστε το με το URL του αρχείου Markdown
+                  const markdownURL = "https://grcodeclub.gr/system/files/List_of_File_Signatures.md"; // Αντικαταστήστε το με το URL του αρχείου Markdown
           
                   async function fetchMarkdown(url) {
                       try {
